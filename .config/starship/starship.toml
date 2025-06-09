@@ -1,0 +1,27 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$c\
+$cpp\
+$lua\
+$haskell\
+$rust\
+$ruby\
+$package\
+$docker_context\
+$jobs\
+$cmd_duration\
+$character"""
+
+[fill]
+symbol = ' '
+
+[c]
+disabled = true
+format = 'via [$name $version]($style)'
+
+[cpp]
+disabled = true
+format = 'via [$name $version]($style)'
