@@ -25,10 +25,3 @@ vim.keymap.set('n', '<C-h>', require("nvim-tmux-navigation").NvimTmuxNavigateLef
 vim.keymap.set('n', '<C-j>', require("nvim-tmux-navigation").NvimTmuxNavigateDown,  { desc = "Go to pane below" })
 vim.keymap.set('n', '<C-k>', require("nvim-tmux-navigation").NvimTmuxNavigateUp,    { desc = "Go to pane above" })
 vim.keymap.set('n', '<C-l>', require("nvim-tmux-navigation").NvimTmuxNavigateRight, { desc = "Go to right pane" })
-
--- codecompanion
-vim.keymap.set("n", "<leader>aa", "<cmd>CodeCompanionChat Toggle<CR>", { desc = "CodeCompanion Chat" })
-vim.keymap.set("n", "<leader>ac", "<cmd>CodeCompanionActions<CR>", { desc = "CodeCompanion Actions" })
-vim.keymap.set("v", "<leader>a", "<cmd>CodeCompanionChat Add<cr>",
-    { noremap = true, silent = true, desc = "Add snippet to CodeCompanion" })
-vim.cmd([[cab cc CodeCompanion]])
